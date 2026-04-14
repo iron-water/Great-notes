@@ -1,0 +1,3 @@
+[submodule "docs/stable-notes"]
+	path = docs/stable-notes
+	url = https://github.com/iron-water/Great-notes.git
