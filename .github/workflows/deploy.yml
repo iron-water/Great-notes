@@ -1,36 +1,28 @@
-name: Deploy to OSS
-
+name: Deploy Website
 on:
-  schedule:
-    - cron: '0 */1 * * *'
   push:
-    branches: [main] # 当 main 分支有变动时触发
+    branches: [main] # 当你推送到 main 分支时触发
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          
+          node-version: 18
+
       - name: Install dependencies
         run: npm install
-        
-      - name: Build with Pre-process
-        # 执行你修复图片和转义的脚本，然后构建
-        run: npm run docs:build 
-        
-      - name: Deploy to OSS
-        uses: manyuanrong/setup-ossutil@v2.0.0
+
+      - name: Run Pre-process # 运行你的脚本修复格式
+        run: node scripts/pre_process.js
+
+      - name: Build VitePress
+        run: npm run docs:build
+
+      - name: Deploy to GitHub Pages # 自动发布
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          endpoint: "oss-cn-beijing.aliyuncs.com" # 换成你实际的地域
-          access-key-id: ${{ secrets.OSS_ACCESS_KEY_ID }}
-          access-key-secret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
-      
-      - name: Sync files
-        # 将生成的 dist 目录同步到名为 formortis 的 Bucket
-        run: ossutil cp -r docs/.vitepress/dist/ oss://formortis/ --update
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
