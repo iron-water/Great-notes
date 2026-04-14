@@ -1,1 +1,0 @@
-import{_ as e,o as a,c as t}from"./chunks/framework.DeBUZsJm.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"pages/gallery.md","filePath":"pages/gallery.md"}'),r={name:"pages/gallery.md"};function s(o,c,l,n,p,_){return a(),t("div")}const m=e(r,[["render",s]]);export{i as __pageData,m as default};
