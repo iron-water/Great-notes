@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vitepress-sidebar": "^1.33.1",
+    "vue": "^3.5.32"
+  },
+  "scripts": {
+    "docs:dev": "node scripts/pre_process.js && vitepress dev docs",
+	"docs:build": "node scripts/pre_process.js && vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "nano": "^11.0.5"
+  }
+}

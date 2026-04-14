@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.DeBUZsJm.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"pages/timeline.md","filePath":"pages/timeline.md"}'),n={name:"pages/timeline.md"};function s(i,r,o,c,p,m){return t(),a("div")}const d=e(n,[["render",s]]);export{_ as __pageData,d as default};
