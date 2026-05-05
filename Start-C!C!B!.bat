@@ -19,7 +19,7 @@ echo 【提示】完成笔记修改后，输入 /exit 退出，将自动触发�
 echo ------------------------------------------
 
 :: 2. 启动 Claude。必须用 call，这样退出 Claude 后脚本才会继续运行
-call ccb
+call ccb --channels plugin:feishu@ezagent42
 
 echo.
 echo ------------------------------------------
