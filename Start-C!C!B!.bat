@@ -4,7 +4,7 @@ chcp 65001 >nul
 title 知识库 AI 管理器
 
 echo ==========================================
-echo      启动 AI 知识库助理 (Claude Code CCB)
+echo      启动 AI 知识库助理 (Claude Code Best)
 echo ==========================================
 echo.
 
