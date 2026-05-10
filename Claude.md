@@ -52,7 +52,7 @@ Great-notes/
 
 ## Dual-Track System
 
-The wiki supports two parallel knowledge-building strategies. They share the same `concepts/` pool — a concept discovered through the network track gets deepened when the tree track reaches it.
+The wiki supports two parallel knowledge-building strategies. They share the same `concepts/` pool — a concept discovered through the network track gets deepened when the tree track reaches it. Attention, without special request, you should always use two tracks simultaneously.
 
 ### Track A: Knowledge Network (existing, enhanced)
 
@@ -194,11 +194,11 @@ Internal links must follow these formatting conventions:
 
 ---
 
-## Operations
+## Two tracks at the same time
 
 ### Network Track: Ingest
 
-When told to ingest a paper or clipped article:
+Works well when ingest a paper or clipped article:
 
 1. Read the full source from `raw/papers/` or `raw/clips/`
 2. (Interactive mode) Discuss key takeaways with Mortis
@@ -213,7 +213,7 @@ When told to ingest a paper or clipped article:
 
 ### Tree Track: Learn
 
-When asked to start or continue a textbook:
+Works well when start or continue a textbook:
 
 1. Read `progress.md` to find current chapter
 2. Load the corresponding `.md` from `processed/textbooks/{book}/`
@@ -355,19 +355,10 @@ Each domain's `wiki/` has five Socrates files:
 
 **Workflow**:
 1. Start a session → read `system.md` + `progress.md`
-2. Ask: new source to ingest (network), or continue textbook (tree), or review?
+2. Ask: new source to ingest , or continue textbook , or review?
 3. Teach via Socratic dialogue, updating concept pages in real time
 4. End session → update `progress.md`, `revision_notes.md`, `index.md`, `log.md`
 5. If tree structure changed → regenerate `tree.md`
 
 ---
 
-## External Tools (recommended)
-
-For processing large PDFs into `processed/textbooks/{book}/` chapter splits:
-
-| Tool | Description |
-|------|-------------|
-| [MinerU](https://github.com/opendatalab/MinerU) | Complex PDF → Markdown/JSON, best for academic papers & textbooks |
-| [PyMuPDF4LLM](https://github.com/pymupdf/PyMuPDF4LLM) | Lightweight PDF → Markdown for LLM consumption |
-| [Marker](https://github.com/VikParuchuri/marker) | PDF → Markdown, fast and accurate (via Surya OCR) |
