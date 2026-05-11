@@ -6,6 +6,24 @@ This is Mortis's personal research knowledge base. Domains: **math, code algorit
 
 ---
 
+## Workflow:
+1. Start a session → read `system.md` + `progress.md`
+2. Ask: new source to ingest , or continue textbook , or review?
+3. Teach via Socratic dialogue, updating concept pages in real time
+4. End session → update `progress.md`, `revision_notes.md`, `index.md`, `log.md`
+5. If tree structure changed → regenerate `tree.md`
+
+### Workflow detail
+
+| Source type | Real-time updates (during dialogue) | Batch updates (session end) |
+|---|---|---|
+| Textbook chapter (`processed/`) | **Tree track** — tree position, core intuition, key theorems, exercises, mastery | **Network track** — network connections, paper cross-links, index.md, questions |
+| Article / clip (`raw/`) | **Network track** — paper summary, concept pages (definition + connections), index.md | **Tree track** — tree positions, core intuition, key theorems, mastery |
+
+**End result**: Every concept page should eventually have BOTH full tree metadata AND full network connections, regardless of which track initiated it.
+
+---
+
 ## Architecture
 
 ```
@@ -52,28 +70,36 @@ Great-notes/
 
 ## Dual-Track System
 
-The wiki supports two parallel knowledge-building strategies. They share the same `concepts/` pool — a concept discovered through the network track gets deepened when the tree track reaches it. Attention, without special request, you should always use two tracks simultaneously.
+The wiki runs two tracks **simultaneously in every session**. They share the same `concepts/` pool. The distinction is only about **update timing** — which track gets updated in real-time during dialogue vs. batch-updated at session end.
 
-### Track A: Knowledge Network (existing, enhanced)
+> **关键规则：每个 session 两轨都跑。区别只在更新时机。绝不允许"这次只跑网络轨"或"只跑树轨"。**
 
-**When**: You find a paper, article, or note worth keeping. Quick, shallow ingestion.
+| Source type | Real-time updates (during dialogue) | Batch updates (session end) |
+|---|---|---|
+| Textbook chapter (`processed/`) | **Tree track** — tree position, core intuition, key theorems, exercises, mastery | **Network track** — network connections, paper cross-links, index.md, questions |
+| Article / clip (`raw/`) | **Network track** — paper summary, concept pages (definition + connections), index.md | **Tree track** — tree positions, core intuition, key theorems, mastery |
+
+**End result**: Every concept page should eventually have BOTH full tree metadata AND full network connections, regardless of which track initiated it.
+
+### Track A: Knowledge Network
+
+**When**: You find a paper, article, or note worth keeping.
 **Input**: Any file → `raw/papers/` or `raw/clips/`
-**Output**: Paper summary + concept page (sparse, links only)
 
 ```
 raw/papers/smith2024.pdf  ──ingest──►  wiki/papers/smith2024.md
-                                       wiki/concepts/特征值.md  (sparse: def + links)
+                                       wiki/concepts/特征值.md  (definition + connections)
                                        wiki/index.md  (updated)
                                        wiki/log.md  (appended)
+                                       ... at session end → add tree positions, theorems, mastery
 ```
 
 **Productivity trick**: Copy-paste the full text into `raw/papers/`. AI will auto-extract and categorize.
 
-### Track B: Knowledge Tree (new, systematic)
+### Track B: Knowledge Tree
 
 **When**: You want to learn a thick textbook from cover to cover.
 **Input**: Textbook PDF → `raw/textbooks/` → external tool → `processed/textbooks/{book}/chXX.md`
-**Output**: Full concept pages with tree position + Socratic teaching + exercises
 
 ```
 raw/textbooks/线性代数.pdf
@@ -83,17 +109,18 @@ processed/textbooks/线性代数/
     ├── ch02-矩阵.md
     └── ...
     ↓ (AI session-by-session)
-wiki/concepts/行列式.md    (full: tree pos, theorems, exercises)
-wiki/concepts/矩阵.md      (full: tree pos, prerequisites, practice)
-wiki/tree.md              (auto-generated hierarchy)
+wiki/concepts/行列式.md    (tree pos, theorems, exercises — updated live)
+wiki/concepts/矩阵.md      (tree pos, prerequisites, practice — updated live)
+wiki/tree.md              (auto-generated hierarchy, updated live)
 wiki/progress.md          (chapter-by-chapter progress)
+... at session end → add network connections, paper cross-links, questions
 ```
 
 ---
 
 ## Knowledge Tree (tree.md)
 
-Auto-generated from concept pages that have a **tree position** section. Concepts created by the network track (sparse, no tree position) do NOT appear in the tree — they live in `index.md` only.
+Auto-generated from concept pages that have a **tree position** section. After session-end batch processing, **all concept pages should eventually have tree positions** — even those first created via the network track. A concept that still lacks tree position is a signal that tree-track batch processing hasn't run yet or the concept's place in the tree hasn't been determined.
 
 ### Example
 
@@ -119,7 +146,7 @@ Auto-generated from concept pages that have a **tree position** section. Concept
 
 - **Parent-child**: hierarchical decomposition (big topic → sub-topic → specific concept)
 - **Prerequisite edges**: learning order — you must understand parent before child
-- **Leaf nodes**: correspond 1:1 to `concepts/{concept}.md`
+- **Every tree node** (internal or leaf) corresponds 1:1 to a `concepts/{concept}.md` page
 - **Regeneration**: run after any concept page's tree position changes
 
 ---
@@ -144,18 +171,19 @@ slug: /domain/branch/page-name
 
 ### Concept Pages (dual-track)
 
-A concept page can be populated at two depths:
+All concept pages should eventually have **both** tree metadata and network connections, regardless of which track created them first. The difference is only in timing:
 
-| Section | Network track (sparse) | Tree track (full) |
-|---------|----------------------|-------------------|
-| `sources` | `raw/papers/xxx.md` | `processed/textbooks/xxx/chXX.md` |
-| Tree position | absent → not in tree.md | filled → appears in tree.md |
-| Core intuition | empty | AI-generated one-liner |
-| Key theorems | empty | extracted from textbook |
-| Network connections | present (links to papers, related concepts) | same + tree-internal links |
-| Common misconceptions | empty | discovered during dialogue |
-| Exercises | empty | AI-generated, with hints |
-| Mastery | 未学习 / 初步了解 | 理解中 / 掌握 |
+| Section | Textbook session (tree first) | Article session (network first) |
+|---------|------------------------------|--------------------------------|
+| `sources` | `processed/textbooks/xxx/chXX.md` | `raw/papers/xxx.md` (or `raw/clips/`) |
+| Tree position | **Live** — filled during dialogue | **Batch** — added at session end |
+| Core intuition | **Live** — AI-generated during teaching | **Batch** — AI-generated at session end |
+| Key theorems | **Live** — extracted from chapter | **Batch** — extracted from article |
+| Network connections | **Batch** — added at session end | **Live** — created during dialogue |
+| Common misconceptions | **Live** — discovered during dialogue | **Live** — discovered during dialogue |
+<!-- misconceptions surface during any Socratic dialogue regardless of source type, hence both are Live -->
+| Exercises | **Live** — AI-generated during teaching | **Batch** — AI-generated at session end |
+| Mastery | **Live** — updated as learner progresses | **Batch** — set based on article depth |
 
 The template lives at `concepts/_template.md`.
 
@@ -196,36 +224,54 @@ Internal links must follow these formatting conventions:
 
 ## Two tracks at the same time
 
-### Network Track: Ingest
+Every session runs both tracks. The **source type** determines which track updates live and which at end:
 
-Works well when ingest a paper or clipped article:
+| Start from | Live track | Batch track |
+|---|---|---|
+| Textbook chapter (`processed/`) | Tree — tree positions, theorems, mastery, tree.md | Network — network connections, paper cross-links |
+| Article / clip (`raw/`) | Network — paper summary, concept defs, network connections, index.md | Tree — tree positions, core intuition, theorems, tree.md |
 
-1. Read the full source from `raw/papers/` or `raw/clips/`
-2. (Interactive mode) Discuss key takeaways with Mortis
-3. Create or update a paper summary page in `wiki/papers/`
-4. For each key concept:
-   - If concept page exists → update with new info, note the source
-   - If not → create concept page (sparse: definition + connections)
-5. Check if this source creates new connections → optionally create `wiki/connections/`
-6. Tag which questions this source speaks to
-7. Update `wiki/index.md`
-8. Append entry to `wiki/log.md` (format: `## [YYYY-MM-DD] ingest | Title`)
+### Textbook session (tree live, network batch)
 
-### Tree Track: Learn
+When learning starts from a `processed/` chapter:
 
-Works well when start or continue a textbook:
-
+**During dialogue (tree track — live):**
 1. Read `progress.md` to find current chapter
 2. Load the corresponding `.md` from `processed/textbooks/{book}/`
 3. For each key concept in the chapter:
    - Create or update concept page with full tree metadata
    - Set tree position (branch, parent, children, prerequisites)
    - Generate core intuition, extract key theorems
-4. Begin Socratic dialogue to guide understanding
-5. During dialogue: record misconceptions, generate practice problems
-6. After mastering: update mastery level
-7. Regenerate `wiki/tree.md`
-8. Update `wiki/progress.md`, `wiki/index.md`, `wiki/log.md`
+   - Update mastery level as learner progresses
+4. Record misconceptions, generate practice problems
+5. Regenerate `wiki/tree.md` as tree positions change
+
+**At session end (network track — batch):**
+6. **For the main-thread concepts only** (tangents and digressions are excluded): add network connections — link to related papers, concepts, questions
+7. Check if any main concepts connect to raw/ articles → add cross-references
+8. Update `wiki/index.md`, `wiki/log.md`
+9. Update `wiki/progress.md` with session record
+
+### Article session (network live, tree batch)
+
+When learning starts from a `raw/` file:
+
+**During dialogue (network track — live):**
+1. Read the full source from `raw/papers/` or `raw/clips/`
+2. Discuss key takeaways with Mortis (Socratic dialogue)
+3. Create or update a paper summary page in `wiki/papers/`
+4. For each key concept:
+   - If concept page exists → update with new info, note the source
+   - If not → create concept page (definition + network connections)
+5. Check for new cross-concept connections → optionally create `wiki/connections/`
+6. Update `wiki/index.md`
+
+**At session end (tree track — batch):**
+7. **For the main-thread concepts only** (tangents and digressions are excluded): add tree position, generate core intuition, extract key theorems
+8. Set mastery level based on depth of article discussion
+9. Regenerate `wiki/tree.md`
+10. Append entry to `wiki/log.md`
+11. Update `wiki/progress.md` with session record
 
 ### Query
 
@@ -247,6 +293,16 @@ When asked to audit the wiki:
 5. Concepts in the tree whose prerequisites aren't yet mastered
 6. Suggest specific papers or topics to fill gaps
 7. Report in a structured format
+
+---
+
+## Session Discipline
+
+**一次只讨论一个主题。对话中的发散追问题不计入 batch 处理范围——batch 只更新主线概念。**
+
+- Batch steps at session end **MUST be completed** before the session is considered closed. A concept page missing its batch-side content is incomplete.
+- When the learner explicitly ends the session or the main topic is exhausted: trigger batch processing.
+- If the learner switches topics mid-session without closure: treat it as a new session (close previous topic's batch first).
 
 ---
 
@@ -353,12 +409,5 @@ Each domain's `wiki/` has five Socrates files:
 | `system.md` | Socratic teaching rules (domain-specific instantiation) |
 | `session_archive.md` | Archived old session records (only when `progress.md` exceeds 200 lines) |
 
-**Workflow**:
-1. Start a session → read `system.md` + `progress.md`
-2. Ask: new source to ingest , or continue textbook , or review?
-3. Teach via Socratic dialogue, updating concept pages in real time
-4. End session → update `progress.md`, `revision_notes.md`, `index.md`, `log.md`
-5. If tree structure changed → regenerate `tree.md`
 
----
 
