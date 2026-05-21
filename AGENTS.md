@@ -28,7 +28,7 @@ This is Mortis's personal research knowledge base. Domains: **math, code algorit
 
 ```
 Great-notes/
-├── Claude.md                   ← you are here: top-level architecture
+├── AGENTS.md                   ← you are here: top-level architecture
 ├── {domain}/                  ← one domain directory per subject
 │   ├── MDclaude.md            ← domain-specific description
 │   ├── raw/                   ← IMMUTABLE: human input only
@@ -168,14 +168,6 @@ tags: tag1, tag2
 slug: /domain/branch/page-name
 ---
 ```
-
-| Rule	                                                        | Example	                             |
-| ------------------------------------------------------------ | ------------------------------------ |
-| Key followed by colon                                        | `sources:`	; `tags`...               |
-| Each item on new line with `- ` prefix                       | 	`- "value"`	                        |
-| Quote values containing special chars, spaces, or non-ASCII	 | `- "path with (parens) or 中文.md"`	 |
-| No commas between items	                                     | (line break + `- ` instead)	         |
-
 
 ### Concept Pages (dual-track)
 
