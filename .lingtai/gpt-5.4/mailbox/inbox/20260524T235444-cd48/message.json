@@ -1,0 +1,26 @@
+{
+  "id": "20260524T235444-cd48",
+  "_mailbox_id": "20260524T235444-cd48",
+  "from": "human",
+  "to": [
+    "gpt-5.4"
+  ],
+  "cc": [],
+  "subject": "",
+  "message": "你好",
+  "type": "normal",
+  "received_at": "2026-05-24T23:54:44.536927213Z",
+  "identity": {
+    "address": "human",
+    "admin": null,
+    "agent_name": "human",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "loc": "35.6895,139.6917",
+      "region": "Tokyo",
+      "resolved_at": "2026-05-23T21:19:51-07:00",
+      "timezone": "Asia/Tokyo"
+    }
+  }
+}

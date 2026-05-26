@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Physics/wiki/concepts/功与能.md",
+                "file": "claudecodeui/README.tr.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "功与能"
+              "title": "README.tr"
             }
           }
         ]
@@ -191,8 +191,14 @@
       "bases:新建数据库": false
     }
   },
-  "active": "a2b37b1325536f23",
+  "active": "7ee130fff5098531",
   "lastOpenFiles": [
+    "claudecodeui/README.ru.md",
+    "claudecodeui/README.ko.md",
+    "claudecodeui/README.md",
+    "CLAUDE.md",
+    "Physics/wiki/concepts/功与能.md",
+    "2026-05-25.md",
     "Math/raw/clips/重积分答 AI 问.md",
     "Math/raw/clips/重积分答 AI 问.md.crdownload",
     "Physics/wiki/concepts/牛顿运动定律.md",

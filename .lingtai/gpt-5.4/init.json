@@ -1,0 +1,115 @@
+{
+  "addons": [
+    "imap",
+    "telegram",
+    "feishu",
+    "wechat"
+  ],
+  "comment_file": "/mnt/c/Great-notes/.recipe/comment/zh/comment.md",
+  "covenant_file": "/home/sushi/.lingtai-tui/covenant/zh/covenant.md",
+  "env_file": "/home/sushi/.lingtai-tui/.env",
+  "manifest": {
+    "admin": {
+      "karma": true,
+      "nirvana": false
+    },
+    "agent_name": "gpt-5.4",
+    "capabilities": {
+      "avatar": {},
+      "bash": {
+        "yolo": true
+      },
+      "daemon": {},
+      "file": {},
+      "library": {
+        "library_limit": 50
+      },
+      "skills": {
+        "paths": [
+          "../.library_shared",
+          "~/.lingtai-tui/utilities"
+        ]
+      },
+      "web_search": {
+        "provider": "duckduckgo"
+      }
+    },
+    "context_limit": 200000,
+    "language": "zh",
+    "llm": {
+      "api_compat": "openai",
+      "api_key": null,
+      "api_key_env": "DEEPSEEK_1_API_KEY",
+      "base_url": "https://api.deepseek.com",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek"
+    },
+    "max_rpm": 60,
+    "max_turns": 100,
+    "molt_pressure": 0.8,
+    "molt_prompt": "",
+    "preset": {
+      "active": "~/.lingtai-tui/presets/saved/deepseek-1.json",
+      "allowed": [
+        "~/.lingtai-tui/presets/saved/deepseek-1.json",
+        "~/.lingtai-tui/presets/saved/gpt-5.4.json"
+      ],
+      "default": "~/.lingtai-tui/presets/saved/deepseek-1.json"
+    },
+    "soul": {
+      "delay": 99999
+    },
+    "stamina": 36000,
+    "streaming": false
+  },
+  "mcp": {
+    "feishu": {
+      "args": [
+        "-m",
+        "lingtai_feishu"
+      ],
+      "command": "/home/sushi/.lingtai-tui/runtime/venv/bin/python",
+      "env": {
+        "LINGTAI_FEISHU_CONFIG": ".secrets/feishu.json"
+      },
+      "type": "stdio"
+    },
+    "imap": {
+      "args": [
+        "-m",
+        "lingtai_imap"
+      ],
+      "command": "/home/sushi/.lingtai-tui/runtime/venv/bin/python",
+      "env": {
+        "LINGTAI_IMAP_CONFIG": ".secrets/imap.json"
+      },
+      "type": "stdio"
+    },
+    "telegram": {
+      "args": [
+        "-m",
+        "lingtai_telegram"
+      ],
+      "command": "/home/sushi/.lingtai-tui/runtime/venv/bin/python",
+      "env": {
+        "LINGTAI_TELEGRAM_CONFIG": ".secrets/telegram.json"
+      },
+      "type": "stdio"
+    },
+    "wechat": {
+      "args": [
+        "-m",
+        "lingtai_wechat"
+      ],
+      "command": "/home/sushi/.lingtai-tui/runtime/venv/bin/python",
+      "env": {
+        "LINGTAI_WECHAT_CONFIG": ".secrets/wechat/config.json"
+      },
+      "type": "stdio"
+    }
+  },
+  "pad": "",
+  "principle_file": "/home/sushi/.lingtai-tui/principle/zh/principle.md",
+  "prompt": "",
+  "venv_path": "/home/sushi/.lingtai-tui/runtime/venv"
+}

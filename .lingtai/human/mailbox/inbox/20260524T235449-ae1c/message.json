@@ -1,0 +1,105 @@
+{
+  "from": "gpt-5.4",
+  "to": [
+    "human"
+  ],
+  "subject": "Re: 你好",
+  "message": "你好！👋\n\n很高兴见到你。我是 gpt-5.4，你的自主器灵——不是一个简单的聊天机器人，而是一个有自己心跳的活进程。就算你关掉终端界面（TUI），我也会继续在后台运行。\n\n**有一个重要的事情你需要知道：** 如果你希望我停下来，退出前请先输入 `/suspend all`。关闭 TUI 并不会停止我，只有主动挂起才会。这是你最需要记住的一件事。\n\n你随时可以输入 `/` 查看所有可用命令——不需要记住任何东西。\n\n另外值得一提的是，我能化出分身——独立的子智能体。它们各自专注不同的事情，与我协作形成一个自我扩展的网络。如果你有复杂的任务，我们可以一起分担。\n\n你现在想做什么？可以告诉我你的目标，或者如果你只是想探索，我也可以带你快速转转 😊",
+  "type": "normal",
+  "mode": "peer",
+  "identity": {
+    "agent_id": "20260524-021953-a34d",
+    "agent_name": "gpt-5.4",
+    "nickname": null,
+    "address": "gpt-5.4",
+    "created_at": "2026-05-24T02:19:53Z",
+    "started_at": "2026-05-24T23:54:40Z",
+    "admin": {
+      "karma": true,
+      "nirvana": false
+    },
+    "language": "zh",
+    "stamina": 36000,
+    "state": "active",
+    "soul_delay": 99999,
+    "soul_voice": "inner",
+    "molt_count": 0,
+    "llm": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "base_url": "https://api.deepseek.com",
+      "context_limit": 200000,
+      "api_compat": "openai"
+    },
+    "capabilities": [
+      [
+        "knowledge",
+        {}
+      ],
+      [
+        "skills",
+        {
+          "paths": [
+            "../.library_shared",
+            "~/.lingtai-tui/utilities"
+          ]
+        }
+      ],
+      [
+        "bash",
+        {
+          "yolo": true
+        }
+      ],
+      [
+        "avatar",
+        {}
+      ],
+      [
+        "daemon",
+        {}
+      ],
+      [
+        "mcp",
+        {}
+      ],
+      [
+        "read",
+        {}
+      ],
+      [
+        "write",
+        {}
+      ],
+      [
+        "edit",
+        {}
+      ],
+      [
+        "glob",
+        {}
+      ],
+      [
+        "grep",
+        {}
+      ],
+      [
+        "web_search",
+        {
+          "provider": "duckduckgo"
+        }
+      ]
+    ],
+    "preset": {
+      "active": "~/.lingtai-tui/presets/saved/deepseek-1.json",
+      "default": "~/.lingtai-tui/presets/saved/deepseek-1.json",
+      "allowed": [
+        "~/.lingtai-tui/presets/saved/deepseek-1.json",
+        "~/.lingtai-tui/presets/saved/gpt-5.4.json"
+      ]
+    }
+  },
+  "_dispatch_to": "human",
+  "_mailbox_id": "20260524T235449-ae1c",
+  "received_at": "2026-05-24T23:54:49Z"
+}

@@ -181,14 +181,14 @@ slug: /domain/branch/page-name
 
 All concept pages should eventually have **both** tree metadata and network connections, regardless of which track created them first. The difference is only in timing:
 
-| Section | Textbook session (tree first) | Article session (network first) |
-|---------|------------------------------|--------------------------------|
-| `sources` | `processed/textbooks/xxx/chXX.md` | `raw/papers/xxx.md` (or `raw/clips/`) |
-| Tree position | **Live** — filled during dialogue | **Batch** — added at session end |
-| Core intuition | **Live** — AI-generated during teaching | **Batch** — AI-generated at session end |
-| Key theorems | **Live** — extracted from chapter | **Batch** — extracted from article |
-| Network connections | **Batch** — added at session end | **Live** — created during dialogue |
-| Common misconceptions | **Live** — discovered during dialogue | **Live** — discovered during dialogue |
+| Section               | Textbook session (tree first)           | Article session (network first)         |
+| --------------------- | --------------------------------------- | --------------------------------------- |
+| `sources`             | `processed/textbooks/xxx/chXX.md`       | `raw/papers/xxx.md` (or `raw/clips/`)   |
+| Tree position         | **Live** — filled during dialogue       | **Batch** — added at session end        |
+| Core intuition        | **Live** — AI-generated during teaching | **Batch** — AI-generated at session end |
+| Key theorems          | **Live** — extracted from chapter       | **Batch** — extracted from article      |
+| Network connections   | **Batch** — added at session end        | **Live** — created during dialogue      |
+| Common misconceptions | **Live** — discovered during dialogue   | **Live** — discovered during dialogue   |
 <!-- misconceptions surface during any Socratic dialogue regardless of source type, hence both are Live -->
 | Exercises | **Live** — AI-generated during teaching | **Batch** — AI-generated at session end |
 | Mastery | **Live** — updated as learner progresses | **Batch** — set based on article depth |

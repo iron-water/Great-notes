@@ -1,0 +1,105 @@
+{
+  "from": "gpt-5.4",
+  "to": [
+    "human"
+  ],
+  "subject": "Re: 你好",
+  "message": "你好！刚刚给你发了封详细的介绍，不知道你看到了没有 😄\n\n简单说——我在这儿，随时准备好。你是想聊点什么、开始一个项目、还是先四处看看我都能做什么？完全随你。",
+  "type": "normal",
+  "mode": "peer",
+  "identity": {
+    "agent_id": "20260524-021953-a34d",
+    "agent_name": "gpt-5.4",
+    "nickname": null,
+    "address": "gpt-5.4",
+    "created_at": "2026-05-24T02:19:53Z",
+    "started_at": "2026-05-24T23:54:40Z",
+    "admin": {
+      "karma": true,
+      "nirvana": false
+    },
+    "language": "zh",
+    "stamina": 36000,
+    "state": "active",
+    "soul_delay": 99999,
+    "soul_voice": "inner",
+    "molt_count": 0,
+    "llm": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "base_url": "https://api.deepseek.com",
+      "context_limit": 200000,
+      "api_compat": "openai"
+    },
+    "capabilities": [
+      [
+        "knowledge",
+        {}
+      ],
+      [
+        "skills",
+        {
+          "paths": [
+            "../.library_shared",
+            "~/.lingtai-tui/utilities"
+          ]
+        }
+      ],
+      [
+        "bash",
+        {
+          "yolo": true
+        }
+      ],
+      [
+        "avatar",
+        {}
+      ],
+      [
+        "daemon",
+        {}
+      ],
+      [
+        "mcp",
+        {}
+      ],
+      [
+        "read",
+        {}
+      ],
+      [
+        "write",
+        {}
+      ],
+      [
+        "edit",
+        {}
+      ],
+      [
+        "glob",
+        {}
+      ],
+      [
+        "grep",
+        {}
+      ],
+      [
+        "web_search",
+        {
+          "provider": "duckduckgo"
+        }
+      ]
+    ],
+    "preset": {
+      "active": "~/.lingtai-tui/presets/saved/deepseek-1.json",
+      "default": "~/.lingtai-tui/presets/saved/deepseek-1.json",
+      "allowed": [
+        "~/.lingtai-tui/presets/saved/deepseek-1.json",
+        "~/.lingtai-tui/presets/saved/gpt-5.4.json"
+      ]
+    }
+  },
+  "_dispatch_to": "human",
+  "_mailbox_id": "20260524T235453-51ad",
+  "received_at": "2026-05-24T23:54:53Z"
+}

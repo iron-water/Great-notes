@@ -1,0 +1,13 @@
+{
+  "address": "human",
+  "admin": null,
+  "agent_name": "human",
+  "location": {
+    "city": "Tokyo",
+    "region": "Tokyo",
+    "country": "JP",
+    "timezone": "Asia/Tokyo",
+    "loc": "35.6895,139.6917",
+    "resolved_at": "2026-05-24T17:00:06-07:00"
+  }
+}

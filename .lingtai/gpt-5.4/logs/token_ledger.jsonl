@@ -1,0 +1,6 @@
+{"source": "tc_wake", "ts": "2026-05-24T23:54:44Z", "input": 88926, "output": 208, "thinking": 139, "cached": 5120, "model": "deepseek-v4-flash", "endpoint": "https://api.deepseek.com"}
+{"source": "tc_wake", "ts": "2026-05-24T23:54:49Z", "input": 88580, "output": 456, "thinking": 183, "cached": 65536, "model": "deepseek-v4-flash", "endpoint": "https://api.deepseek.com"}
+{"source": "tc_wake", "ts": "2026-05-24T23:54:51Z", "input": 89946, "output": 222, "thinking": 146, "cached": 88960, "model": "deepseek-v4-flash", "endpoint": "https://api.deepseek.com"}
+{"source": "tc_wake", "ts": "2026-05-24T23:54:53Z", "input": 89638, "output": 187, "thinking": 57, "cached": 88960, "model": "deepseek-v4-flash", "endpoint": "https://api.deepseek.com"}
+{"source": "tc_wake", "ts": "2026-05-24T23:54:55Z", "input": 89953, "output": 129, "thinking": 84, "cached": 89728, "model": "deepseek-v4-flash", "endpoint": "https://api.deepseek.com"}
+{"source": "tc_wake", "ts": "2026-05-24T23:54:56Z", "input": 90218, "output": 70, "thinking": 33, "cached": 89984, "model": "deepseek-v4-flash", "endpoint": "https://api.deepseek.com"}

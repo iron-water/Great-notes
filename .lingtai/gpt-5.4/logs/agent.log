@@ -1,0 +1,73 @@
+19:19:53 WARNING lingtai: [gpt-5.4] init.json mcp 'feishu': skipped — not in mcp_registry.jsonl. Register it first (see mcp-manual skill).
+19:19:53 WARNING lingtai: [gpt-5.4] init.json mcp 'imap': skipped — not in mcp_registry.jsonl. Register it first (see mcp-manual skill).
+19:19:53 WARNING lingtai: [gpt-5.4] init.json mcp 'telegram': skipped — not in mcp_registry.jsonl. Register it first (see mcp-manual skill).
+19:19:53 WARNING lingtai: [gpt-5.4] init.json mcp 'wechat': skipped — not in mcp_registry.jsonl. Register it first (see mcp-manual skill).
+2026-05-23 19:19:54,719 ERROR lingtai_feishu eager start failed; tool calls will return errors until fixed: Feishu config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/feishu.json
+2026-05-23 19:19:54,726 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+19:19:54 INFO lingtai: [gpt-5.4] MCP feishu (init.json:mcp): loaded 1 tools (feishu)
+2026-05-23 19:19:55,060 ERROR lingtai_imap eager start failed; tool calls will return errors until fixed: IMAP config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/imap.json
+2026-05-23 19:19:55,067 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+19:19:55 INFO lingtai: [gpt-5.4] MCP imap (init.json:mcp): loaded 1 tools (imap)
+2026-05-23 19:19:55,389 ERROR lingtai_telegram eager start failed; tool calls will return errors until fixed: Telegram config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/telegram.json
+2026-05-23 19:19:55,394 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+19:19:55 INFO lingtai: [gpt-5.4] MCP telegram (init.json:mcp): loaded 1 tools (telegram)
+2026-05-23 19:19:55,753 ERROR lingtai_wechat eager start failed; tool calls will return errors until fixed: WeChat config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/wechat/config.json
+2026-05-23 19:19:55,759 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+19:19:55 INFO lingtai: [gpt-5.4] MCP wechat (init.json:mcp): loaded 1 tools (wechat)
+19:19:55 INFO lingtai.core.mcp.inbox: mcp_inbox: poller started for gpt-5.4 (root=/mnt/c/Great-notes/.lingtai/gpt-5.4/.mcp_inbox)
+19:19:59 WARNING lingtai: [gpt-5.4] AED attempt 1/3: 'str' object has no attribute 'choices'
+19:19:59 WARNING lingtai: [gpt-5.4] AED attempt 2/3: 'str' object has no attribute 'choices'
+19:20:00 WARNING lingtai: [gpt-5.4] AED attempt 3/3: 'str' object has no attribute 'choices'
+2026-05-24 16:53:37,160 ERROR lingtai_feishu eager start failed; tool calls will return errors until fixed: Feishu config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/feishu.json
+2026-05-24 16:53:37,165 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:53:37 INFO lingtai: [gpt-5.4] MCP feishu (init.json:mcp): loaded 1 tools (feishu)
+2026-05-24 16:53:37,497 ERROR lingtai_imap eager start failed; tool calls will return errors until fixed: IMAP config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/imap.json
+2026-05-24 16:53:37,503 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:53:37 INFO lingtai: [gpt-5.4] MCP imap (init.json:mcp): loaded 1 tools (imap)
+2026-05-24 16:53:37,816 ERROR lingtai_telegram eager start failed; tool calls will return errors until fixed: Telegram config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/telegram.json
+2026-05-24 16:53:37,821 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:53:37 INFO lingtai: [gpt-5.4] MCP telegram (init.json:mcp): loaded 1 tools (telegram)
+2026-05-24 16:53:38,174 ERROR lingtai_wechat eager start failed; tool calls will return errors until fixed: WeChat config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/wechat/config.json
+2026-05-24 16:53:38,180 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:53:38 INFO lingtai: [gpt-5.4] MCP wechat (init.json:mcp): loaded 1 tools (wechat)
+2026-05-24 16:53:39,251 ERROR lingtai_feishu eager start failed; tool calls will return errors until fixed: Feishu config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/feishu.json
+2026-05-24 16:53:39,257 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:53:39 INFO lingtai: [gpt-5.4] MCP feishu (init.json:mcp): loaded 1 tools (feishu)
+2026-05-24 16:53:39,551 ERROR lingtai_imap eager start failed; tool calls will return errors until fixed: IMAP config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/imap.json
+2026-05-24 16:53:39,557 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:53:39 INFO lingtai: [gpt-5.4] MCP imap (init.json:mcp): loaded 1 tools (imap)
+2026-05-24 16:53:39,847 ERROR lingtai_telegram eager start failed; tool calls will return errors until fixed: Telegram config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/telegram.json
+2026-05-24 16:53:39,852 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:53:39 INFO lingtai: [gpt-5.4] MCP telegram (init.json:mcp): loaded 1 tools (telegram)
+2026-05-24 16:53:40,189 ERROR lingtai_wechat eager start failed; tool calls will return errors until fixed: WeChat config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/wechat/config.json
+2026-05-24 16:53:40,196 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:53:40 INFO lingtai: [gpt-5.4] MCP wechat (init.json:mcp): loaded 1 tools (wechat)
+16:53:40 INFO lingtai.core.mcp.inbox: mcp_inbox: poller started for gpt-5.4 (root=/mnt/c/Great-notes/.lingtai/gpt-5.4/.mcp_inbox)
+16:53:47 WARNING lingtai: [gpt-5.4] AED attempt 1/3: 'str' object has no attribute 'choices'
+16:53:47 WARNING lingtai: [gpt-5.4] AED attempt 2/3: 'str' object has no attribute 'choices'
+16:53:48 WARNING lingtai: [gpt-5.4] AED attempt 3/3: 'str' object has no attribute 'choices'
+2026-05-24 16:54:37,282 ERROR lingtai_feishu eager start failed; tool calls will return errors until fixed: Feishu config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/feishu.json
+2026-05-24 16:54:37,292 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:54:37 INFO lingtai: [gpt-5.4] MCP feishu (init.json:mcp): loaded 1 tools (feishu)
+2026-05-24 16:54:37,653 ERROR lingtai_imap eager start failed; tool calls will return errors until fixed: IMAP config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/imap.json
+2026-05-24 16:54:37,658 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:54:37 INFO lingtai: [gpt-5.4] MCP imap (init.json:mcp): loaded 1 tools (imap)
+2026-05-24 16:54:37,936 ERROR lingtai_telegram eager start failed; tool calls will return errors until fixed: Telegram config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/telegram.json
+2026-05-24 16:54:37,941 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:54:37 INFO lingtai: [gpt-5.4] MCP telegram (init.json:mcp): loaded 1 tools (telegram)
+2026-05-24 16:54:38,270 ERROR lingtai_wechat eager start failed; tool calls will return errors until fixed: WeChat config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/wechat/config.json
+2026-05-24 16:54:38,276 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:54:38 INFO lingtai: [gpt-5.4] MCP wechat (init.json:mcp): loaded 1 tools (wechat)
+2026-05-24 16:54:39,333 ERROR lingtai_feishu eager start failed; tool calls will return errors until fixed: Feishu config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/feishu.json
+2026-05-24 16:54:39,339 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:54:39 INFO lingtai: [gpt-5.4] MCP feishu (init.json:mcp): loaded 1 tools (feishu)
+2026-05-24 16:54:39,632 ERROR lingtai_imap eager start failed; tool calls will return errors until fixed: IMAP config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/imap.json
+2026-05-24 16:54:39,637 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:54:39 INFO lingtai: [gpt-5.4] MCP imap (init.json:mcp): loaded 1 tools (imap)
+2026-05-24 16:54:39,923 ERROR lingtai_telegram eager start failed; tool calls will return errors until fixed: Telegram config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/telegram.json
+2026-05-24 16:54:39,928 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:54:39 INFO lingtai: [gpt-5.4] MCP telegram (init.json:mcp): loaded 1 tools (telegram)
+2026-05-24 16:54:40,222 ERROR lingtai_wechat eager start failed; tool calls will return errors until fixed: WeChat config not found: /mnt/c/Great-notes/.lingtai/gpt-5.4/.secrets/wechat/config.json
+2026-05-24 16:54:40,227 INFO mcp.server.lowlevel.server Processing request of type ListToolsRequest
+16:54:40 INFO lingtai: [gpt-5.4] MCP wechat (init.json:mcp): loaded 1 tools (wechat)
+16:54:40 INFO lingtai.core.mcp.inbox: mcp_inbox: poller started for gpt-5.4 (root=/mnt/c/Great-notes/.lingtai/gpt-5.4/.mcp_inbox)
