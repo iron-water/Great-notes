@@ -14,6 +14,8 @@ git pull origin main
 
 echo.
 echo [2/4] 正在启动 Claude Code CCB...
+set "CLAUDE_CONFIG_DIR=C:\CC\CCB\.claude"
+set "WEIXIN_STATE_DIR=C:\CC\CCB\.claude\channels\weixin"
 echo ------------------------------------------
 echo 【提示】完成笔记修改后，输入 /exit 退出，将自动触发同步
 echo ------------------------------------------
