@@ -1,19 +1,8 @@
-# Math Learning Progress
+# Math progress.md
 
-## 2026-05-10 | Ingest
-
-### 主题
-東雲正樹《矩阵的本质是什么？》——知乎回答
-
-### 关键收获
-- 矩阵本质上是一张定义了加法、数乘、乘法的数表；它不等于线性变换
-- 线性空间的研究通过同构映射"外包"给矩阵计算：选基 → 同构到列矩阵空间 → 计算 → 反向映射
-- "表示"是一个比同构更宽松的概念（同态，多对一映射）
-- 学习者自己画出了双轨并行流程图，准确捕捉了矩阵"外挂"在外的角色
-
-### 知识缺口
-- **表示 vs 同构**: 学习者明确表示"不太明白"表示概念，需要后续澄清
-- 线性空间、线性映射等基础概念页面尚未建立（树轨将覆盖）
-
-### 下次建议
-继续树轨学习——线性代数应该这样学 第3章，"线性映射"和"同构"部分已与本次 ingest 的内容形成交叉，可以双向深化
+> Placeholder / future generated view. Not source of truth.
+>
+> Core layers:
+> - Human input: ../raw/
+> - Shared progress: ../progress/learning_log.md
+> - AI-retained knowledge: concepts/

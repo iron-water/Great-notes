@@ -1,0 +1,9 @@
+{
+  "couchdb_url": "http://localhost:5984",
+  "couchdb_user": "",
+  "couchdb_password": "",
+  "oss_endpoint": "",
+  "oss_bucket": "",
+  "oss_access_key": "",
+  "oss_secret_key": ""
+}

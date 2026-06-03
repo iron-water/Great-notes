@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a2589b96e591bd15",
+        "id": "6d5e0b159cc0e679",
         "type": "tabs",
         "children": [
           {
-            "id": "7ee130fff5098531",
+            "id": "e00ac9a117c55ee2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "claudecodeui/README.tr.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README.tr"
+              "title": "新标签页"
             }
           }
         ]
@@ -191,8 +177,9 @@
       "bases:新建数据库": false
     }
   },
-  "active": "7ee130fff5098531",
+  "active": "e00ac9a117c55ee2",
   "lastOpenFiles": [
+    "claudecodeui/README.tr.md",
     "claudecodeui/README.ru.md",
     "claudecodeui/README.ko.md",
     "claudecodeui/README.md",

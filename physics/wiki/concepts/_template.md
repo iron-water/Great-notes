@@ -1,34 +1,63 @@
 ---
-title: "Concept Name"
-type: concept
+title: "Node Title"
+type: knowledge_node
+domain: Physics
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-sources: ""
-tags:
-slug: /physics/branch/concept
+status: active
+slug: /physics/path/node
+sources:
+  - "raw/..."
 ---
 
-## Tree Position
-- Branch:
-- Parent:
-- Children:
-- Prerequisites:
-- Mastery: unlearned
+# Node Title
 
-## Core Intuition
+## Node Identity
+- Kind:
+- One-line meaning:
+- Current role in learning:
 
+## Position State
+- Path hypothesis:
+- Position confidence: unresolved
+- Position status: floating
+- Notes:
 
-## Key Theorems / Key Laws
+## Mastery State
+- Level: unlearned
+- Confidence: low
+- Last evidence:
+- Last updated:
 
+## Evidence Ledger
+- YYYY-MM-DD | event-id | evidence-type: summary
 
-## Network Connections
-| Related concept | Relationship | Description |
-|----------------|-------------|-------------|
+## Relations
+### Prerequisites
+- Node:
+  relation confidence:
+  why:
 
-## Common Misconceptions
+### Depends On Me
+- Node:
+  relation confidence:
+  why:
 
+### Related / Contrast / Analogy / Application
+- Node:
+  relation type:
+  relation confidence:
+  why:
 
-## Exercises
-
+## Prerequisite Debt
+- [ ] Node:
+  why it matters:
+  discovered at event-id:
 
 ## Open Questions
+- [ ] Question:
+  discovered at event-id:
+
+## Next Local Actions
+- [ ] Action:
+  reason:

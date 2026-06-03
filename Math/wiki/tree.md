@@ -1,8 +1,8 @@
-# Math Knowledge Tree
+# Math tree.md
 
-> 自动生成于概念页的「树位置」字段。网络轨创建的概念（无树位置）不出现于此，可在 `index.md` 中查阅。
-
-```
-数学
-(暂无树轨概念节点 — 树轨学习开始后将自动填充)
-```
+> Placeholder / future generated view. Not source of truth.
+>
+> Core layers:
+> - Human input: ../raw/
+> - Shared progress: ../progress/learning_log.md
+> - AI-retained knowledge: concepts/
